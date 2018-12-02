@@ -80,9 +80,8 @@ let reverse = w => {
       hold = i + hold;
     }
   } else {
-    let arr = value + "";
-    let shift = arr.split("");
-    // let remove = shift.shift();
+    value === NaN ? value : (value += "");
+    let shift = value.split("");
     let reverse = shift.reverse().join("");
     let int = parseInt(reverse);
     return (neg = int * -1);

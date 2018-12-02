@@ -37,13 +37,27 @@ let word = "somthing";
 
 // using reduse
 
-let prev = word => {
-  let hold = word.split("", word.length);
+// let prev = word => {
+//   let hold = word.split("", word.length);
+//   debugger;
+//   let s = hold.reduce((a, c) => {
+//     a = c + a;
+//     return a;
+//   });
+//   console.log(s);
+// };
+// console.log(prev(word));
 
-  let s = hold.reduce((a, c) => {
-    a = c + a;
-    return a;
-  });
-  console.log(s);
+let worad = 51;
+let hold = " ";
+
+let reverse = w => {
+  w === NaN ? w : (w += "");
+  for (const i of w) {
+    hold = i + hold;
+  }
+  let value = Number(hold);
+  return value;
 };
-console.log(prev(word));
+let v = reverse(worad) === NaN ? " worng" : "correct";
+console.log(v);

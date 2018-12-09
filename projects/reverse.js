@@ -135,15 +135,15 @@
 // console.log(convert(number));
 //--------------------------------------------------------
 //more improve
-const number = 23;
+// const number = 23;
 
-const convert = number => {
-  const array = number
-    .toString()
-    .split("")
-    .reverse("")
-    .join("");
-  let n = parseInt(array);
-  return n * Math.sign(number);
-};
-console.log(convert(number));
+// const convert = number => {
+//   const array = number
+//     .toString()
+//     .split("")
+//     .reverse("")
+//     .join("");
+//   let n = parseInt(array);
+//   return n * Math.sign(number);
+// };
+// console.log(convert(number));
